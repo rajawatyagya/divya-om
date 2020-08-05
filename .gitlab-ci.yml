@@ -4,6 +4,7 @@ production:
     - prod-runner
   script:
     - cd /var/www/divya-om
+    - git stash
     - git pull
     - yarn
     - yarn build
