@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import ComingSoon from "./components/comingSoon/ComingSoon";
-import Foot from "./components/foot/Foot";
+import FootPage from "./components/footPage/FootPage";
+import NavbarPage from "./components/navbarPage/NavbarPage";
+import MainPage from "./components/mainPage/MainPage";
 
 function App() {
   return (
     <div className="App">
-      <ComingSoon />
-      <Foot />
+        <NavbarPage />
+        <MainPage />
+        <FootPage />
     </div>
   );
 }

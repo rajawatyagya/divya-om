@@ -1,0 +1,12 @@
+production:
+  stage: deploy
+  tags:
+    - prod-runner
+  script:
+    - cd /var/www/divya-om
+    - git pull
+    - yarn
+    - yarn build
+    - sudo service nginx restart
+  only:
+    - master
