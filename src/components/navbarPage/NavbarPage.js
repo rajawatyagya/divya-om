@@ -68,7 +68,7 @@ class NavbarPage extends Component {
                             <h1 className="display-1">Amrut</h1>
                             <h5>The hot gossip is our secret masala and granny tales-the best known preservative</h5>
                             <br />
-                            <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
+                            <p></p>
                         </MDBMask>
                     </MDBView>
                 </header>
