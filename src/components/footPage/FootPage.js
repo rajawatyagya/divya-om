@@ -29,17 +29,20 @@ const FootPage = () => {
                     <MDBCol md="6" className="p-4 d-flex flex-column justify-content-start">
                         <h5 className="title">Find us here :</h5>
                         <div className="mt-2">
-                            <a href="https://facebook.com/profile" className="">
+                            <a href="https://facebook.com/omagrofoodproducts" className="">
                                 <MDBIcon className='mr-2' fab icon="facebook-f" size="lg" />
                             </a>
-                            <a href="https://instagram.com/profile" className="pl-2">
+                            <a href="https://instagram.com/omagrofoodproducts" className="pl-2">
                                 <MDBIcon className='mr-2' fab icon="instagram" size="lg" />
                             </a>
-                            <a href="https://twitter.com/profile" className="pl-2">
-                                <MDBIcon className='mr-2' fab icon="twitter" size="lg" />
-                            </a>
+                            {/*<a href="https://twitter.com/omagrofood?s=20" className="pl-2">*/}
+                            {/*    <MDBIcon className='mr-2' fab icon="twitter" size="lg" />*/}
+                            {/*</a>*/}
                             <a href="https://youtube.com/profile" className="pl-2">
                                 <MDBIcon className='mr-2' fab icon="youtube" size="lg" />
+                            </a>
+                            <a href="https://wa.me/message/VRZRXGSO2ZUCD1" className="pl-2">
+                                <MDBIcon className='mr-2' fab icon="whatsapp" size="lg" />
                             </a>
                         </div>
                     </MDBCol>

@@ -1,10 +1,15 @@
 import React, { Component } from "react";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBContainer,
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse, MDBContainer,
     MDBView, MDBMask } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import './NavbarPage.css';
-import logo_image from '../../assets/img/logo_white.png';
-import back_head from '../../assets/img/stock/back-1.jpg';
+import logo_image from '../../assets/scss/img/logo_white.png';
+import back_head from '../../assets/scss/img/stock/back-1.jpg';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import MainPage from "../mainPage/MainPage";
+import Recipes from "../recipes/Recipes";
+import Gallery from "../gallery/Gallery";
+import About from "../about/About";
 
 
 class NavbarPage extends Component {
@@ -24,7 +29,7 @@ class NavbarPage extends Component {
             <div>
                 <header>
                     <Router>
-                        <MDBNavbar color="default-color-dark" dark expand="md" fixed="top">
+                        <MDBNavbar color="secondary-om" dark expand="md" fixed="top">
                             <MDBNavbarBrand href="/">
                                 <img src={logo_image} alt='Om Agro Food Products'
                                      className='image-fluid logo' />
@@ -33,53 +38,87 @@ class NavbarPage extends Component {
                             <MDBCollapse isOpen={this.state.collapse} navbar>
                                 <MDBNavbarNav right>
                                     <MDBNavItem active>
-                                        <MDBNavLink to="#!">Home</MDBNavLink>
+                                        <AnchorLink offset={() => 100} href='#home'
+                                                    style={{ color:"white" }}
+                                                    className="pl-3">
+                                            Home
+                                        </AnchorLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
-                                        <MDBNavLink to="#!">Products</MDBNavLink>
+                                        <AnchorLink offset={() => 100} href='#products'
+                                                    style={{ color:"white" }}
+                                                    className="pl-3">
+                                            Products
+                                        </AnchorLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
-                                        <MDBNavLink to="#!">Recipes</MDBNavLink>
+                                        <AnchorLink offset={() => 100} href='#recipes'
+                                                    style={{ color:"white" }}
+                                                    className="pl-3">
+                                            Recipes
+                                        </AnchorLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
-                                        <MDBNavLink to="#!">Gallery</MDBNavLink>
+                                        <AnchorLink offset={() => 100} href='#gallery'
+                                                    style={{ color:"white" }}
+                                                    className="pl-3">
+                                            Gallery
+                                        </AnchorLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
-                                        <MDBNavLink to="#about_us"> About Us</MDBNavLink>
-                                        {/*<MDBDropdown>*/}
-                                        {/*    <MDBDropdownToggle nav caret>*/}
-                                        {/*        <div className="d-none d-md-inline">Dropdown</div>*/}
-                                        {/*    </MDBDropdownToggle>*/}
-                                        {/*    <MDBDropdownMenu className="dropdown-default">*/}
-                                        {/*        <MDBDropdownItem href="#!">Action</MDBDropdownItem>*/}
-                                        {/*        <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>*/}
-                                        {/*        <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>*/}
-                                        {/*        <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>*/}
-                                        {/*    </MDBDropdownMenu>*/}
-                                        {/*</MDBDropdown>*/}
+                                        <AnchorLink offset={() => 100} href='#about'
+                                                    style={{ color:"white" }}
+                                                    className="pl-3">
+                                            About Us
+                                        </AnchorLink>
                                     </MDBNavItem>
                                 </MDBNavbarNav>
                             </MDBCollapse>
                         </MDBNavbar>
                     </Router>
 
-                    <MDBView src={back_head}>
-                        <MDBMask overlay="black-strong" className="flex-center flex-column text-white text-center">
-                            <h1 className="display-1">Amrut</h1>
-                            <h5>The hot gossip is our secret masala and granny tales-the best known preservative</h5>
-                            <br />
-                            <p></p>
-                        </MDBMask>
-                    </MDBView>
+                    <section id='home'>
+                        <MDBView src={back_head}>
+                            <MDBMask overlay="black-strong" className="flex-center flex-column text-white text-center">
+                                <h1 className="display-1">Amrut</h1>
+                                <h4>The hot gossip is our secret masala and granny tales-the best known preservative.</h4>
+                                <br />
+                                <p>Made with love, goodness and care.</p>
+                            </MDBMask>
+                        </MDBView>
+                    </section>
                 </header>
 
                 <main>
                     <MDBContainer className="text-center my-5">
-                        <p align="justify">
-                            Our Vision is expand globally and be recognized as an Indian Household name around the world.
+                        <p align="text-center">
+                            Our Vision is to expand globally and be recognized as an Indian Household name around the world.
+                        </p>
+                        <p align="text-center">
                             We are committed to grow with integrity.
                         </p>
                     </MDBContainer>
+                    <section id='products'>
+                        <MDBContainer>
+                            <MainPage />
+                        </MDBContainer>
+                    </section>
+                    <section id='recipes'>
+                        <MDBContainer className="text-center my-5">
+                            <Recipes />
+                        </MDBContainer>
+                    </section>
+                    <section id='gallery'>
+                        <MDBContainer className="text-center my-5">
+                            <Gallery />
+                        </MDBContainer>
+                    </section>
+                    <section id='about'>
+                        <MDBContainer className="text-center my-5">
+                            <About />
+                        </MDBContainer>
+                    </section>
+
                 </main>
             </div>
         );
