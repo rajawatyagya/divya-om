@@ -11,6 +11,8 @@ import Recipes from "../recipes/Recipes";
 import Gallery from "../gallery/Gallery";
 import About from "../about/About";
 
+import amrut from '../../assets/scss/img/amrut.png';
+
 
 class NavbarPage extends Component {
     constructor(props) {
@@ -80,7 +82,7 @@ class NavbarPage extends Component {
                     <section id='home'>
                         <MDBView src={back_head}>
                             <MDBMask overlay="black-strong" className="flex-center flex-column text-white text-center">
-                                <h1 className="display-1">Amrut</h1>
+                                <img src={amrut} alt="Amrut" className="amrut-logo" />
                                 <h4>The hot gossip is our secret masala and granny tales-the best known preservative.</h4>
                                 <br />
                                 <p>Made with love, goodness and care.</p>
