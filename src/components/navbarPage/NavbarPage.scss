@@ -1,0 +1,165 @@
+#apppage .gradient {
+    background: -moz-linear-gradient(
+            45deg,
+            rgba(42, 27, 161, 0.7),
+            rgba(29, 210, 177, 0.7) 100%
+    );
+    background: -webkit-linear-gradient(
+            45deg,
+            rgba(42, 27, 161, 0.7),
+            rgba(29, 210, 177, 0.7) 100%
+    );
+    background: -webkit-gradient(
+            linear,
+            45deg,
+            from(rgba(42, 27, 161, 0.7)),
+            to(rgba(29, 210, 177, 0.7))
+    );
+    background: -o-linear-gradient(
+            45deg,
+            rgba(42, 27, 161, 0.7),
+            rgba(29, 210, 177, 0.7) 100%
+    );
+    background: linear-gradient(
+            45deg,
+            rgba(42, 27, 161, 0.7),
+            rgba(29, 210, 177, 0.7) 100%
+    );
+}
+
+#apppage .full-page {
+    background-image: url("../../assets/scss/img/stock/back-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.ib-head {
+    font-size: 3.5rem !important;
+}
+
+.ib-tagline {
+    font-size: 1.25rem;
+}
+
+.welcome-ib {
+    color: white;
+}
+
+.logo {
+    width: 30%;
+}
+
+.anchor-tag {
+}
+
+.app-store {
+    width: 20rem;
+}
+
+.play-image {
+    width: 20rem;
+}
+
+.typing {
+    font-size: 2rem;
+    color: white;
+}
+
+@media only screen and (max-width: 320px) {
+//#apppage .animated img {
+//  max-height: 50vh;
+//  transform: translateX(-50%);
+//  left: 50%;
+//  position: absolute;
+//}
+    .welcome-ib {
+        margin-top: 11rem!important;
+    }
+    .ib-head {
+        font-size: 1.5rem !important;
+    }
+
+    .ib-tagline {
+        font-size: 0.75rem;
+    }
+    .typing {
+        font-size: 1rem;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+//#apppage .animated img {
+//  max-height: 50vh;
+//  transform: translateX(-50%);
+//  left: 50%;
+//  position: absolute;
+//}
+    .welcome-ib {
+        margin-top: 8rem;
+    }
+    .ib-head {
+        font-size: 2rem !important;
+    }
+
+    .ib-tagline {
+        font-size: 0.85rem;
+    }
+    .typing {
+        font-size: 1.25rem;
+        color: white;
+    }
+}
+@media only screen and (max-width: 575px) {
+//#apppage .animated img {
+//  max-height: 50vh;
+//  transform: translateX(-50%);
+//  left: 50%;
+//  position: absolute;
+//}
+    .welcome-ib {
+        margin-top: 5rem;
+    }
+    .ib-head {
+        font-size: 2rem !important;
+    }
+    .ib-tagline {
+        font-size: 0.85rem;
+    }
+
+    .typing {
+        font-size: 1.25rem;
+        color: white;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    #apppage .animated img {
+        max-height: 35vh;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .app-store {
+        width: 15rem;
+    }
+
+    .play-image {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    #apppage .animated img {
+        max-height: 50vh;
+        transform: translateX(-50%);
+        left: 50%;
+        position: relative;
+    }
+}
+@media (max-width: 1000px) and (orientation: landscape) {
+    #apppage .full-page {
+        min-height: 150vh;
+    }
+}
+

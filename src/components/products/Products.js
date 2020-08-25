@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './MainPage.css';
+import './Products.css';
 
-class MainPage extends Component {
+class Products extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -22,4 +22,4 @@ class MainPage extends Component {
     }
 }
 
-export default MainPage;
+export default Products;
