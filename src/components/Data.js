@@ -11,38 +11,44 @@ export default {
           "Name": "Banarsi Aloo Papad",
           "Description": "From the country's oldest city, 'Banaras' we bring you the wholesome goodness of exclusive taste and quality in BANARASI ALOO PAPAD which is Handmade from Organic Potatoes. A must have for a balanced diet. Roasting it, fry it, bake it, roll it and embellish your indian thali while your fasting (Upwas) as well. Available in 500gm gm and 1Kg, environment protected packaging.",
           "Stock": "2",
-          "Price": "299.00"
+          "Price": "249.00",
+          "image": "https://ik.imagekit.io/omagrofoodproducts/products/aaloo_papad_Oa9GZznK9.jpg"
         },
         {
           "Name": "Marwari Moong Masala (Spicy)",
           "Description": "Discover the crunchy goodness of moong, flavoured with the traditional blend of double  pepper,extra red chillies and dry spices! Complete your traditional Indian meal with this versatile papad, which can be served roasted or fried, plain or topped with chopped veggies and masala.",
           "Stock": "2",
-          "Price": "299.00"
+          "Price": "239.00",
+          "image": "https://ik.imagekit.io/omagrofoodproducts/products/moong_papad_HNjQoA-lJyf.jpg"
         },
         {
           "Name": "Marwari Moong Masala (Medium Spicy)",
           "Description": "Discover the crunchy goodness of moong, flavoured with the traditional blend of pepper, red chillies and dry spices! Complete your traditional Indian meal with this versatile papad, which can be served roasted or fried, plain or topped with chopped veggies and masala.",
           "Stock": "2",
-          "Price": "299.00"
+          "Price": "239.00",
+          "image": "https://ik.imagekit.io/omagrofoodproducts/products/moong_papad_HNjQoA-lJyf.jpg"
         },
         {
           "Name": "Marwai Chana Masala",
           "Description": "Chana Dal Papad is a traditional Indian thin, crisp, disc-shaped spicy treat made from flours and Chana Dal. It can be served as an accompaniment to a meal.",
           "Stock": "2",
-          "Price": "299.00"
+          "Price": "239.00",
+          "image": "https://ik.imagekit.io/omagrofoodproducts/products/chana_masal_papad_q1mEjWtKm.jpg"
         },
         {
           "Name": "Rice Khichiya",
           "Description": "The khichiya papads are made up of rice flour unlike others that are made up of pulses. The rice flour is kneaded to make perfect dough along with spices and rolled out to make papads.",
-          "Flavours": "Jeera, Green Chilli, Red Chilli, Ginger Chilli, Rajwadi Masala",
+          "Flavours": "Jeera, Green Chilli, Red Chilli, Ginger Chilli, Rajwadi Masala - 99",
           "Stock": "2",
-          "Price": "299.00"
+          "Price": "89.00",
+          "image": "https://ik.imagekit.io/omagrofoodproducts/products/red_chilli_papad_4Se0Mzgjj0of.jpg"
         },
         {
           "Name": "Wheat Khichiya",
           "Description": "This Wheat Khichiya comes with the goodness of edible flour, edible oil, chilli flakes, red chilli, salt and other spices.",
           "Stock": "2",
-          "Price": "299.00"
+          "Price": "299.00",
+          "image": "https://ik.imagekit.io/omagrofoodproducts/products/rajwadi_papad_lcGU47s1EmjI.jpg"
         }
       ]
     },
